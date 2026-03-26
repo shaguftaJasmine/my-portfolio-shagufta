@@ -2,22 +2,16 @@ import { motion } from "framer-motion";
 
 const timeline = [
   {
-    role: "Data Science Intern",
+    role: "Data Science Intern (Remote)",
     company: "Arch Technologies",
-    period: "2023 – Present",
-    desc: "Building ML pipelines and automated reporting systems, saving 15+ hours/week in manual data processing.",
+    period: "Mar 2025 – Present",
+    desc: "Building ML models and preprocessing data for real-world projects. Collaborating with teams to derive actionable insights using Python and Scikit-learn.",
   },
   {
-    role: "Teaching Assistant",
-    company: "Academia",
-    period: "2022 – 2023",
-    desc: "Mentored 80+ students in programming and data science fundamentals, achieving 96% positive feedback.",
-  },
-  {
-    role: "Lead Event Organizer",
-    company: "Tech Society",
+    role: "Teacher (Math, Computer, English)",
+    company: "The Educatore's Campus",
     period: "2021 – 2022",
-    desc: "Organized 10+ hackathons and tech summits, building a vibrant student tech community.",
+    desc: "Taught multiple subjects, developed lesson plans, and improved student learning outcomes.",
   },
 ];
 

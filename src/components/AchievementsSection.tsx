@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 
 const achievements = [
-  { emoji: "🏆", title: "99% Model Accuracy", desc: "NLP fake news detection via ensemble methods" },
-  { emoji: "🎤", title: "Session Mentor", desc: "Technical workshops on AI/ML for student communities" },
-  { emoji: "🎪", title: "Lead Organizer", desc: "10+ tech events impacting hundreds of students" },
-  { emoji: "🎓", title: "Academic Excellence", desc: "High performance in AI/ML applied research" },
-  { emoji: "🔬", title: "Novel Research", desc: "Graphology + computer vision handwriting analysis" },
-  { emoji: "⚡", title: "Full-Stack DS", desc: "End-to-end ML deployment to production" },
+  { emoji: "🏆", title: "99.36% Model Accuracy", desc: "NLP fake news detection using TF-IDF & Logistic Regression" },
+  { emoji: "🎤", title: "Session Lead & Mentor", desc: "D-Tech junior sessions on AI/ML for student communities" },
+  { emoji: "🎪", title: "Event Organizer", desc: "Business Summit, Tech Connect 2024 at Sukkur IBA" },
+  { emoji: "🏅", title: "Book Review Winner", desc: "Won Book Review Competition at Sukkur IBA University" },
+  { emoji: "🔬", title: "Novel Research", desc: "Handwriting personality prediction via custom feature extraction" },
+  { emoji: "🎓", title: "BS Computer Science", desc: "Sukkur IBA University (2022 – 2026)" },
 ];
 
 const AchievementsSection = () => (

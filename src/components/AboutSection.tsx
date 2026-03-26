@@ -77,7 +77,7 @@ const AboutSection = () => (
           Who <span className="gradient-text">I Am</span>
         </h2>
         <p className="text-muted-foreground mb-8 leading-relaxed">
-          I'm an AI/ML enthusiast and Data Science professional passionate about building intelligent systems that solve real-world problems. From NLP-powered misinformation detectors to handwriting personality predictors using computer vision, I thrive at the intersection of machine learning and human insight. Beyond building models, I've mentored 80+ students and led 10+ tech events, fostering a community that believes in the power of data.
+          AI/ML and Data Science professional focused on delivering data-driven insights and impactful results. Proficient in data analysis, machine learning, visualization tools, and modern technologies, building scalable applications using Vibe Coding frameworks. From NLP-powered misinformation detectors to handwriting personality predictors, I thrive at the intersection of machine learning and human insight. Strong multitasking ability and human behavior analysis skills.
         </p>
         <div className="grid grid-cols-2 gap-4">
           {stats.map((s, i) => (

@@ -7,27 +7,27 @@ interface Project {
 
 const projects: Project[] = [
   {
-    num: "01", title: "Fake News Detector", emoji: "🔍", badge: "⚡ 99% Accuracy", featured: true,
-    desc: "NLP-powered misinformation detection system trained on 40,000+ articles. Combines TF-IDF vectorization with an ensemble of classifiers achieving near-perfect accuracy. Deployed as a live Streamlit web app.",
-    tags: ["NLP", "Scikit-learn", "TF-IDF", "Streamlit"],
+    num: "01", title: "Fake News Detector", emoji: "🔍", badge: "⚡ 99.36% Accuracy", featured: true,
+    desc: "Built NLP pipeline classifying 68K+ articles with 99.36% accuracy using TF-IDF & Logistic Regression. Deployed as a live Streamlit web app for real-time misinformation detection.",
+    tags: ["Python", "Scikit-learn", "Streamlit", "NLP"],
     link: "https://fake-news-detection-by-shagufta.netlify.app/",
   },
   {
     num: "02", title: "Netflix Content Analysis Dashboard", emoji: "🎬", badge: "🔥 EDA",
-    desc: "Deep EDA on 8,800+ titles uncovering genre trends, regional insights, and content strategy patterns through interactive Tableau dashboards.",
-    tags: ["Tableau", "Pandas", "EDA"],
+    desc: "Analyzed 8,000+ titles revealing 69% movies dominance, top genre, and peak addition month through rich data visualizations.",
+    tags: ["Python", "Pandas", "Data Visualization"],
     link: "https://github.com/shaguftaJasmine/",
   },
   {
     num: "03", title: "Handwriting Personality Predictor", emoji: "✍️", badge: "🧬 Novel Research",
-    desc: "CNN-powered graphology model that maps pen pressure, slant, and letter spacing to Big Five personality dimensions. A genuinely unique intersection of psychology and CV.",
-    tags: ["CNN", "OpenCV", "TensorFlow"],
+    desc: "Built real-time app predicting Big Five personality traits via custom feature extraction algorithms using pen pressure, slant, and letter spacing analysis.",
+    tags: ["Python", "Streamlit", "OpenCV", "Scikit-learn"],
     link: "https://fake-news-detecor-4wbwj4bcdr5xarqpzlwuw8.streamlit.app/",
   },
   {
     num: "04", title: "Sales & Marketing Analytics Dashboard", emoji: "📊", badge: "💼 BI",
-    desc: "Full-stack BI solution integrating CRM data with predictive sales forecasting, RFM customer segmentation, and real-time Power BI monitoring.",
-    tags: ["Power BI", "SQL", "Forecasting"],
+    desc: "Analyzed 5,000+ transactions, identified revenue drivers, and projected 12% sales growth through comprehensive data visualization and predictive modeling.",
+    tags: ["Python", "Pandas", "Scikit-learn", "Data Visualization"],
     link: "https://github.com/shaguftaJasmine/sales-marketing-analysis",
   },
   {

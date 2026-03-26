@@ -1,26 +1,29 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-type Category = "All" | "Core" | "ML/AI" | "Visualization";
+type Category = "All" | "Core" | "ML/AI" | "Visualization" | "Tools";
 
 const skills: { name: string; emoji: string; cat: Category }[] = [
   { name: "Python", emoji: "🐍", cat: "Core" },
   { name: "Pandas", emoji: "🐼", cat: "Core" },
   { name: "NumPy", emoji: "🔢", cat: "Core" },
   { name: "SQL", emoji: "🗄️", cat: "Core" },
+  { name: "Technical Writing", emoji: "📝", cat: "Core" },
   { name: "Scikit-learn", emoji: "🤖", cat: "ML/AI" },
   { name: "NLP", emoji: "💬", cat: "ML/AI" },
-  { name: "TensorFlow", emoji: "🧠", cat: "ML/AI" },
-  { name: "XGBoost", emoji: "🌲", cat: "ML/AI" },
   { name: "OpenCV", emoji: "👁️", cat: "ML/AI" },
+  { name: "Human Behavior Analysis", emoji: "🧠", cat: "ML/AI" },
   { name: "Tableau", emoji: "📊", cat: "Visualization" },
   { name: "Power BI", emoji: "📈", cat: "Visualization" },
   { name: "Streamlit", emoji: "⚡", cat: "Visualization" },
   { name: "Matplotlib", emoji: "📉", cat: "Visualization" },
-  { name: "Seaborn", emoji: "🎨", cat: "Visualization" },
+  { name: "Lovable", emoji: "💜", cat: "Tools" },
+  { name: "Bolt AI", emoji: "⚡", cat: "Tools" },
+  { name: "Claude Code", emoji: "🤖", cat: "Tools" },
+  { name: "AWS", emoji: "☁️", cat: "Tools" },
 ];
 
-const categories: Category[] = ["All", "Core", "ML/AI", "Visualization"];
+const categories: Category[] = ["All", "Core", "ML/AI", "Visualization", "Tools"];
 
 const SkillsSection = () => {
   const [active, setActive] = useState<Category>("All");
