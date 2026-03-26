@@ -80,7 +80,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.9 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
           <button onClick={() => scrollTo("projects")} className="btn-gradient px-8 py-3 rounded-lg font-semibold text-foreground cursor-none">
             View My Work
@@ -88,6 +88,9 @@ const HeroSection = () => {
           <button onClick={() => scrollTo("contact")} className="btn-outline-glow px-8 py-3 rounded-lg font-semibold text-foreground cursor-none">
             Hire Me
           </button>
+          <a href="/Shagufta_Jasmine_Resume.pdf" download className="btn-outline-glow px-8 py-3 rounded-lg font-semibold text-foreground cursor-none flex items-center gap-2">
+            📄 Download Resume
+          </a>
         </motion.div>
       </div>
     </section>
