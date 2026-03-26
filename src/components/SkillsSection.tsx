@@ -9,6 +9,7 @@ const skills: { name: string; emoji: string; cat: Category }[] = [
   { name: "NumPy", emoji: "🔢", cat: "Core" },
   { name: "SQL", emoji: "🗄️", cat: "Core" },
   { name: "Technical Writing", emoji: "📝", cat: "Core" },
+  { name: "Communication", emoji: "🗣️", cat: "Core" },
   { name: "Scikit-learn", emoji: "🤖", cat: "ML/AI" },
   { name: "NLP", emoji: "💬", cat: "ML/AI" },
   { name: "OpenCV", emoji: "👁️", cat: "ML/AI" },
