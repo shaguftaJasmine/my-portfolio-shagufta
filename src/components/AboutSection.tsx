@@ -89,7 +89,7 @@ const AboutSection = () => (
               transition={{ delay: i * 0.1 }}
               className="glass-card-glow rounded-xl p-4 text-center"
             >
-              <div className="text-3xl font-bold gradient-text">{s.value}</div>
+              <CountUp target={s.num} suffix={s.suffix} />
               <div className="text-sm text-muted-foreground mt-1">{s.label}</div>
             </motion.div>
           ))}
