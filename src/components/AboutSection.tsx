@@ -1,12 +1,35 @@
-import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+import { motion, useInView } from "framer-motion";
 import profileImg from "@/assets/shagufta-profile.jpeg";
 
 const stats = [
-  { value: "5+", label: "Projects" },
-  { value: "99%", label: "Best Accuracy" },
-  { value: "80+", label: "Students Mentored" },
-  { value: "10+", label: "Events Led" },
+  { num: 5, suffix: "+", label: "Projects" },
+  { num: 99, suffix: "%", label: "Best Accuracy" },
+  { num: 80, suffix: "+", label: "Students Mentored" },
+  { num: 10, suffix: "+", label: "Events Led" },
 ];
+
+const CountUp = ({ target, suffix }: { target: number; suffix: string }) => {
+  const [count, setCount] = useState(0);
+  const ref = useRef<HTMLDivElement>(null);
+  const inView = useInView(ref, { once: true });
+
+  useEffect(() => {
+    if (!inView) return;
+    const duration = 1500;
+    const steps = 40;
+    const increment = target / steps;
+    let current = 0;
+    const timer = setInterval(() => {
+      current += increment;
+      if (current >= target) { setCount(target); clearInterval(timer); }
+      else setCount(Math.floor(current));
+    }, duration / steps);
+    return () => clearInterval(timer);
+  }, [inView, target]);
+
+  return <div ref={ref} className="text-3xl font-bold gradient-text">{count}{suffix}</div>;
+};
 
 const AboutSection = () => (
   <section id="about" className="section-padding relative">
@@ -66,7 +89,7 @@ const AboutSection = () => (
               transition={{ delay: i * 0.1 }}
               className="glass-card-glow rounded-xl p-4 text-center"
             >
-              <div className="text-3xl font-bold gradient-text">{s.value}</div>
+              <CountUp target={s.num} suffix={s.suffix} />
               <div className="text-sm text-muted-foreground mt-1">{s.label}</div>
             </motion.div>
           ))}
