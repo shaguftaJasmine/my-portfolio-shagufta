@@ -11,30 +11,35 @@ const projects: Project[] = [
     desc: "Built NLP pipeline classifying 68K+ articles with 99.36% accuracy using TF-IDF & Logistic Regression. Deployed as a live Streamlit web app for real-time misinformation detection.",
     tags: ["Python", "Scikit-learn", "Streamlit", "NLP"],
     link: "https://fake-news-detection-by-shagufta.netlify.app/",
+    github: "https://github.com/shaguftaJasmine/fake-news-detection",
   },
   {
     num: "02", title: "Netflix Content Analysis Dashboard", emoji: "🎬", badge: "🔥 EDA",
     desc: "Analyzed 8,000+ titles revealing 69% movies dominance, top genre, and peak addition month through rich data visualizations.",
     tags: ["Python", "Pandas", "Data Visualization"],
     link: "https://github.com/shaguftaJasmine/",
+    github: "https://github.com/shaguftaJasmine/",
   },
   {
     num: "03", title: "Handwriting Personality Predictor", emoji: "✍️", badge: "🧬 Novel Research",
     desc: "Built real-time app predicting Big Five personality traits via custom feature extraction algorithms using pen pressure, slant, and letter spacing analysis.",
     tags: ["Python", "Streamlit", "OpenCV", "Scikit-learn"],
     link: "https://fake-news-detecor-4wbwj4bcdr5xarqpzlwuw8.streamlit.app/",
+    github: "https://github.com/shaguftaJasmine/handwriting-personality-predictor",
   },
   {
     num: "04", title: "Sales & Marketing Analytics Dashboard", emoji: "📊", badge: "💼 BI",
     desc: "Analyzed 5,000+ transactions, identified revenue drivers, and projected 12% sales growth through comprehensive data visualization and predictive modeling.",
     tags: ["Python", "Pandas", "Scikit-learn", "Data Visualization"],
     link: "https://github.com/shaguftaJasmine/sales-marketing-analysis",
+    github: "https://github.com/shaguftaJasmine/sales-marketing-analysis",
   },
   {
     num: "05", title: "AI Study Planner", emoji: "🤖📚", badge: "✨ Smart Learning",
     desc: "Intelligent study companion that generates personalized learning schedules, tracks progress, and uses AI to optimize revision intervals based on your goals and availability.",
     tags: ["React", "AI Scheduler", "Productivity", "Tailwind"],
     link: "https://study-buddy-ai-540.lovable.app",
+    github: "https://github.com/shaguftaJasmine/ai-study-planner",
   },
 ];
 
