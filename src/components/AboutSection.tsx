@@ -76,8 +76,11 @@ const AboutSection = () => (
         <h2 className="text-4xl font-bold mb-2">
           Who <span className="gradient-text">I Am</span>
         </h2>
+        <p className="text-muted-foreground mb-4 leading-relaxed">
+          I fell in love with coding when I realized data could tell stories no one else was hearing. What started as curiosity about Python scripts quickly grew into a passion for building intelligent systems that solve real problems — from detecting misinformation with 99.36% accuracy to predicting personality from handwriting.
+        </p>
         <p className="text-muted-foreground mb-8 leading-relaxed">
-          AI/ML and Data Science professional focused on delivering data-driven insights and impactful results. Proficient in data analysis, machine learning, visualization tools, and modern technologies, building scalable applications using Vibe Coding frameworks. From NLP-powered misinformation detectors to handwriting personality predictors, I thrive at the intersection of machine learning and human insight. Strong multitasking ability and human behavior analysis skills.
+          As a BS Computer Science student at Sukkur IBA University, I've led 80+ students as a Microsoft Learn Student Ambassador and organized 10+ tech events. I thrive at the intersection of machine learning and human insight, and I'm actively seeking opportunities where I can apply my AI/ML skills to create meaningful impact. My goal? To build AI solutions that make complex data accessible and actionable for everyone.
         </p>
         <div className="grid grid-cols-2 gap-4">
           {stats.map((s, i) => (
