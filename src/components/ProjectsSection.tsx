@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface Project {
-  num: string; title: string; emoji: string; badge: string; desc: string; tags: string[]; link: string; featured?: boolean;
+  num: string; title: string; emoji: string; badge: string; desc: string; tags: string[]; link: string; github: string; featured?: boolean;
 }
 
 const projects: Project[] = [
