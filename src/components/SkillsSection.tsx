@@ -1,30 +1,51 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-type Category = "All" | "Core" | "ML/AI" | "Visualization" | "Tools";
+type Category = "All" | "AI/ML" | "Data & Analytics" | "Cloud & MLOps" | "Programming" | "Soft Skills";
 
-const skills: { name: string; emoji: string; cat: Category }[] = [
-  { name: "Python", emoji: "🐍", cat: "Core" },
-  { name: "Pandas", emoji: "🐼", cat: "Core" },
-  { name: "NumPy", emoji: "🔢", cat: "Core" },
-  { name: "SQL", emoji: "🗄️", cat: "Core" },
-  { name: "Technical Writing", emoji: "📝", cat: "Core" },
-  { name: "Communication", emoji: "🗣️", cat: "Core" },
-  { name: "Scikit-learn", emoji: "🤖", cat: "ML/AI" },
-  { name: "NLP", emoji: "💬", cat: "ML/AI" },
-  { name: "OpenCV", emoji: "👁️", cat: "ML/AI" },
-  { name: "Human Behavior Analysis", emoji: "🧠", cat: "ML/AI" },
-  { name: "Tableau", emoji: "📊", cat: "Visualization" },
-  { name: "Power BI", emoji: "📈", cat: "Visualization" },
-  { name: "Streamlit", emoji: "⚡", cat: "Visualization" },
-  { name: "Matplotlib", emoji: "📉", cat: "Visualization" },
-  { name: "Lovable", emoji: "💜", cat: "Tools" },
-  { name: "Bolt AI", emoji: "⚡", cat: "Tools" },
-  { name: "Claude Code", emoji: "🤖", cat: "Tools" },
-  { name: "AWS", emoji: "☁️", cat: "Tools" },
+const skills: { name: string; emoji: string; cat: Exclude<Category, "All"> }[] = [
+  // AI & Machine Learning
+  { name: "Scikit-learn", emoji: "🤖", cat: "AI/ML" },
+  { name: "ANN", emoji: "🧠", cat: "AI/ML" },
+  { name: "CNN", emoji: "🖼️", cat: "AI/ML" },
+  { name: "RNN", emoji: "🔁", cat: "AI/ML" },
+  { name: "NLP", emoji: "💬", cat: "AI/ML" },
+  { name: "LLMs", emoji: "✨", cat: "AI/ML" },
+  { name: "EDA", emoji: "🔍", cat: "AI/ML" },
+  { name: "Feature Engineering", emoji: "🛠️", cat: "AI/ML" },
+  // Data & Analytics
+  { name: "MongoDB", emoji: "🍃", cat: "Data & Analytics" },
+  { name: "Model Deployment", emoji: "🚀", cat: "Data & Analytics" },
+  { name: "REST APIs", emoji: "🌐", cat: "Data & Analytics" },
+  { name: "Data Cleaning", emoji: "🧹", cat: "Data & Analytics" },
+  { name: "Power BI", emoji: "📈", cat: "Data & Analytics" },
+  { name: "Matplotlib", emoji: "📉", cat: "Data & Analytics" },
+  { name: "Seaborn", emoji: "📊", cat: "Data & Analytics" },
+  { name: "Data-driven Reporting", emoji: "📑", cat: "Data & Analytics" },
+  // Cloud & MLOps
+  { name: "Microsoft Azure", emoji: "☁️", cat: "Cloud & MLOps" },
+  { name: "Azure ML", emoji: "🧪", cat: "Cloud & MLOps" },
+  { name: "Azure App Service", emoji: "🖥️", cat: "Cloud & MLOps" },
+  { name: "GitHub Actions CI/CD", emoji: "⚙️", cat: "Cloud & MLOps" },
+  { name: "Docker", emoji: "🐳", cat: "Cloud & MLOps" },
+  { name: "Git/GitHub", emoji: "🐙", cat: "Cloud & MLOps" },
+  { name: "Streamlit", emoji: "⚡", cat: "Cloud & MLOps" },
+  { name: "FastAPI", emoji: "🚄", cat: "Cloud & MLOps" },
+  // Programming
+  { name: "Python", emoji: "🐍", cat: "Programming" },
+  { name: "SQL", emoji: "🗄️", cat: "Programming" },
+  { name: "Java", emoji: "☕", cat: "Programming" },
+  { name: "JavaScript", emoji: "📜", cat: "Programming" },
+  { name: "HTML/CSS", emoji: "🎨", cat: "Programming" },
+  // Soft Skills
+  { name: "Communication", emoji: "🗣️", cat: "Soft Skills" },
+  { name: "Report Writing", emoji: "📝", cat: "Soft Skills" },
+  { name: "Problem Solving", emoji: "🧩", cat: "Soft Skills" },
+  { name: "Analytical Thinking", emoji: "🧠", cat: "Soft Skills" },
+  { name: "Time Management", emoji: "⏱️", cat: "Soft Skills" },
 ];
 
-const categories: Category[] = ["All", "Core", "ML/AI", "Visualization", "Tools"];
+const categories: Category[] = ["All", "AI/ML", "Data & Analytics", "Cloud & MLOps", "Programming", "Soft Skills"];
 
 const SkillsSection = () => {
   const [active, setActive] = useState<Category>("All");
