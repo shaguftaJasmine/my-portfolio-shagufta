@@ -73,7 +73,7 @@ const ContactSection = () => {
         </div>
 
         <p className="text-center text-muted-foreground text-sm mt-12">
-          © 2026 Shagufta Jasmine. Crafted with 💜
+          © 2026 Shagufta Jasmine
         </p>
       </div>
     </section>
