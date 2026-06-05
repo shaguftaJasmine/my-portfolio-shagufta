@@ -4,12 +4,18 @@ const timeline = [
   {
     role: "Data Science Intern (Remote)",
     company: "Arch Technologies",
-    period: "Mar 2025 – Present",
-    desc: "Building ML models and preprocessing data for real-world projects. Collaborating with teams to derive actionable insights using Python and Scikit-learn.",
+    period: "Apr 2026 – May 2026",
+    desc: "Building ML models and preprocessing datasets for real-world projects using Python and Scikit-learn.",
+  },
+  {
+    role: "Aspire Leadership Program 2026",
+    company: "Aspire Institute",
+    period: "Apr 2026 – Jun 2026",
+    desc: "Developed communication, networking, leadership, and problem-solving skills through a global cohort program.",
   },
   {
     role: "Teacher (Math, Computer, English)",
-    company: "The Educatore's Campus",
+    company: "The Educators Campus",
     period: "2021 – 2022",
     desc: "Taught multiple subjects, developed lesson plans, and improved student learning outcomes.",
   },
