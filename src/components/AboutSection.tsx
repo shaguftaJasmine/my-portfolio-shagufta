@@ -77,10 +77,10 @@ const AboutSection = () => (
           Who <span className="gradient-text">I Am</span>
         </h2>
         <p className="text-muted-foreground mb-4 leading-relaxed">
-          I fell in love with coding when I realized data could tell stories no one else was hearing. What started as curiosity about Python scripts quickly grew into a passion for building intelligent systems that solve real problems — from detecting misinformation with 99.36% accuracy to predicting personality from handwriting.
+          I am Shagufta, a Computer Science student with a strong interest in AI, Data Science, Machine Learning, and Software Development. I have experience working on data analysis projects and developing software solutions, including my Final Year Project, Smart Academia Platform.
         </p>
         <p className="text-muted-foreground mb-8 leading-relaxed">
-          As a BS Computer Science student at Sukkur IBA University, I've led 80+ students as a Microsoft Learn Student Ambassador and organized 10+ tech events. I thrive at the intersection of machine learning and human insight, and I'm actively seeking opportunities where I can apply my AI/ML skills to create meaningful impact. My goal? To build AI solutions that make complex data accessible and actionable for everyone.
+          I enjoy solving real-world problems using technology, learning new tools, and continuously improving my technical and analytical skills. I am passionate about innovation, research, and creating impactful digital solutions.
         </p>
         <div className="grid grid-cols-2 gap-4">
           {stats.map((s, i) => (
